@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{24186A33-CC83-4AE9-8E78-BEFB428BA2C4}]
+@="MyFirstCOMDll"
+[HKEY_CLASSES_ROOT\CLSID\{24186A33-CC83-4AE9-8E78-BEFB428BA2C4}\InprocServer32]
+@="C:\\Windows\\SysWOW64\\ClassFactoryDllServerWithRegFile.dll"

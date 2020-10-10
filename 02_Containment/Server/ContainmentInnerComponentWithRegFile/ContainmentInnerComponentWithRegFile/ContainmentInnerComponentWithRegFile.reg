@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{38B0F6B0-6268-4DC8-A64A-0516A46075C7}]
+@="ContainmentCOMDll"
+[HKEY_CLASSES_ROOT\CLSID\{38B0F6B0-6268-4DC8-A64A-0516A46075C7}\InprocServer32]
+@="C:\\Windows\\SysWOW64\\ContainmentInnerComponentWithRegFile.dll"
