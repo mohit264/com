@@ -126,7 +126,7 @@ HRESULT CSumSubtract::SubtractionOfTwoIntegers(int num1, int num2, int *pSum)
 HRESULT CSumSubtract::InitializeInnerComponent()
 {
 	HRESULT hr;
-	hr = CoCreateInstance(CLSID_MultiplicationDivision, reinterpret_cast<IUnknown*>(this), CLSCTX_INPROC_SERVER, IID_IMultiplication,
+	hr = CoCreateInstance(CLSID_MultiplicationDivision, reinterpret_cast<IUnknown*>(this), CLSCTX_INPROC_SERVER, IID_IUnknown,
 		(void **)&m_pIUnknownInner);
 	if (FAILED(hr))
 	{
