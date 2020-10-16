@@ -196,8 +196,8 @@ HRESULT CMultiplicationDivisionClassFactory::CreateInstance(IUnknown *pUnkOuter,
 	{
 		return (E_OUTOFMEMORY);
 	}
-	hr = pCMultiplicationDivision->QueryInterface(riid, ppv);
-	pCMultiplicationDivision->Release();
+	hr = pCMultiplicationDivision->QueryInterface_NoAggregation(riid, ppv);
+	pCMultiplicationDivision->Release_NoAggregation();
 	return (hr);
 }
 
