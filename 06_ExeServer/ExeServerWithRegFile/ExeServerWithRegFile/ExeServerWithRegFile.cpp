@@ -206,6 +206,10 @@ ULONG CSumSubtract::Release(void)
 	if (m_cref == 0)
 	{
 		delete(this);
+		if (glNumberOfActiveComponents == 0 && glNumberOfServerLocks == 0)
+		{
+			PostMessage(ghwnd, WM_QUIT, (WPARAM)0, (LPARAM)0);
+		}
 		return (0);
 	}
 	return (m_cref);
