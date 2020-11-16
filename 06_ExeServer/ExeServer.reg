@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{CA5FCBA6-1228-4716-AE6E-350AB077F7A0}]
+@="ExeServer"
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{CA5FCBA6-1228-4716-AE6E-350AB077F7A0}\LocalServer32]
+@="C:\\Windows\\SysWOW64\\ClassFactoryDllServerWithRegFile.dll"
