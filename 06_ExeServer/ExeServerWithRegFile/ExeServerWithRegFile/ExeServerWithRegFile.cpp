@@ -51,7 +51,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	HWND hwnd;
 	HRESULT hr;
 	int iDontShowWindow = 0;
-	TCHAR AppName[] = TEXT("ExeServer");
+	TCHAR AppName[] = TEXT("ExeServerWithRegFile");
 	TCHAR szTokens[] = TEXT("-/");
 	TCHAR *pszTokens;
 	TCHAR lpszCmdLine[255];
@@ -313,6 +313,7 @@ HRESULT StartMyClassFactories(void)
 	}
 	return S_OK;
 }
+
 void StopMyClassFactories(void)
 {
 	if (dwRegister != 0)
@@ -330,7 +331,7 @@ DWORD GetParentProcessID(void)
 	HANDLE hProcessSnapshot = NULL;
 	BOOL bRetCode = FALSE;
 	PROCESSENTRY32 ProcessEntry = { 0 };
-	DWORD dwPPID;
+	DWORD dwPPID = 0L;
 	TCHAR szNameOfThisProcess[_MAX_PATH], szNameOfParentProcess[_MAX_PATH];
 	TCHAR szTemp[_MAX_PATH], str[_MAX_PATH], *ptr = NULL;
 
